@@ -25,19 +25,16 @@ def test_dot_perp():
 	b = [1,0]
 	assert dot(a,b) == 0
 
+def test_a_lessthan_b():
+	a = [1,2]
+	b = [1,2,3]
 
-# Not working for some reason.
+	with pytest.raises(AssertionError):	
+		assert dot(a,b) == 3
 
-#def test_a_lessthan__b():
-#	a = [1,2]
-#	b = [1,2,3]
+def test_b_lessthan_a():
+	a = [1,2]
+	b = [1,2,3]
 
-#	with pytest.raises(AssertionError):	
-#		assert dot(a,b) == 3
-
-#def test_b_lessthan_a():
-#	a = [1,2]
-#	b = [1,2,3]
-
-#	with pytest.raises(Assertion Error):
-#		assert dot(a,b) == 3
+	with pytest.raises(AssertionError):
+		assert dot(a,b) == 3
