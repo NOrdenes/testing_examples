@@ -1,3 +1,5 @@
+import pytest
+
 def dot(a,b):
 	res = 0
 	for i in range(len(a)):
