@@ -22,3 +22,10 @@ def test_<something>
 Then, in a terminal...
 
 >> py.test Script.py 
+
+ó 
+
+#Revisa todo los tests y funciones dentro de la carpeta
+>> pytest -v 
+
+ 
